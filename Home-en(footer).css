@@ -1,0 +1,160 @@
+footer{
+  background-color: #000000dc;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+footer hr{
+  margin-left: 100px;
+  width: 40%;
+}
+.site-name{
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  left: 45%;
+  margin-left: 6px;
+  display: flex;
+  overflow: hidden;
+}
+.site-name img{
+  width: 40px;
+  height: auto;
+}
+.site-name a{
+  text-decoration: none;
+  position: relative;
+  top: 5px;
+  color: white;
+  font: 18px  "MuseoModerno", sans-serif;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  font: 22px  "MuseoModerno", sans-serif;
+  ul li{
+    margin-top: 10px;
+  }
+  li::marker {
+    color: #6e6e6e;
+  }
+  a{
+    text-decoration: none;
+    color: #6e6e6e;
+    font-size: 18px;
+    transition: 0.5s ease;
+  }
+  a:hover{
+    color: white;
+  }
+}
+.footer-img img{
+  width: 780px;
+  bottom: -80px;
+  right: -10%;
+  position: absolute;
+}
+.copyright1 {
+  font: 200 14px "MuseoModerno", sans-serif;
+  color: white;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: #000000dc;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: left;
+    overflow: hidden;
+  }
+
+  .site-name{
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    left: auto;
+    margin-left: 6px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .footer-content div {
+    margin-bottom: 20px;
+  }
+
+  .footer-content h4 {
+    font-size: 18px;
+    color: white;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    justify-content: left;
+  }
+
+  .footer-content ul {
+    padding: 0;
+  }
+
+  .footer-content ul li {
+    margin: 5px 0;
+    justify-items: left;
+  }
+
+  .footer-content ul li a {
+    text-decoration: none;
+    color: #6e6e6e;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .footer-content ul li a:hover {
+    color: white;
+  }
+
+  .footer-img img {
+    width: 150%;
+    position: absolute;
+    bottom: auto;
+    right: -90%;
+  }
+
+  footer hr{
+    margin: auto;
+    width: 50%;
+  }
+
+  .copyright1 {
+    font: 200 14px "MuseoModerno", sans-serif;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+
+  }
+}

@@ -1,0 +1,221 @@
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+#contact.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  .section-header {
+    text-align: center;
+    font: 60px "Reem Kufi", cursive;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 400px;
+    position: relative;
+  }
+  .form-horizontal {
+    max-width: 400px;
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 400;
+  }
+  .form-control, textarea {
+    width: 400px;
+    font-family: "Noto Sans Arabic", sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  .send-button {
+    margin-top: 5px;
+    height: 40px;
+    width: 400px;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  .alt-send-button {
+    width: 400px;
+    height: 30px;
+    transition: all .2s ease-in-out;
+  }
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font-family: "Noto Sans Arabic", sans-serif;
+    letter-spacing: 2px;
+  }
+  .alt-send-button:hover {
+    transform: translate3d(0px, -30px, 0px);
+  }
+  .direct-contact-container {
+    max-width: 400px;
+  }
+  .contact-list {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style-type: none;
+  }
+  .list-item {
+    line-height: 2;
+    color: #424242;
+  }
+  .contact-text {
+    font-family: "Noto Sans Arabic", sans-serif;
+    letter-spacing: 1.9px;
+    color: #333;
+  }
+  .contact-text a {
+    color: #555;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  .contact-text a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  .copyright {
+    font-family: "Noto Sans Arabic", sans-serif;
+    color: #222;
+    text-align: center;
+    margin-top: 10px;
+  }
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  .contact-pic{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    overflow: hidden;
+  }
+  .contact-pic:hover{
+    overflow: visible;
+  }
+  .contact-pic .pic-left{
+    width: min-content;
+    position: relative;
+    right: 85%;
+    z-index: 1;
+  }
+  .contact-pic .pic-left img{
+    width: 600px;
+    filter: grayscale(1);
+    transition: 0.4s ease;
+  }
+  .contact-pic .pic-left img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  .contact-pic .pic-right{
+    width: min-content;
+    position: relative;
+    left: 85%;
+    z-index: 1;
+  }
+  .contact-pic .pic-right img{
+    width: 600px;
+    filter: grayscale(1);
+    transition: 0.4s ease;
+  }
+  .contact-pic .pic-right img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 1600px) {
+
+  }
+  
+  @media screen and (max-width: 1100px) {
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    #contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .contact-pic{
+        display: none;
+      }
+      .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px auto;
+        position: relative;
+      }
+  }

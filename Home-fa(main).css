@@ -1,0 +1,278 @@
+.main-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    max-width: 100%;
+    margin: 150px auto;
+    z-index: 3;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+  }
+  
+  .main-image {
+    width: 650px;
+    height: auto;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, filter 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    background-size: cover;
+    margin: auto;
+    height: auto;
+    position: relative;
+    will-change: transform;
+    filter: grayscale(1);
+    z-index: 3;
+  }
+  
+  .main-image:hover {
+    transform: translateZ(12px);
+    filter: grayscale(0);
+    z-index: 3;
+  }
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  .left-text {
+    font-family: "Noto Sans Arabic", sans-serif;
+    width: 20%;
+    max-width: 400px;
+    text-align: justify;
+    font-size: 18px; 
+    line-height: 1.5;
+    direction: rtl;
+  }
+  .left-text h2{
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 150px;
+  }
+  .right-text {
+    font-family: "Noto Sans Arabic", sans-serif;
+    width: 20%;
+    max-width: 400px;
+    text-align: justify;
+    font-size: 18px; 
+    line-height: 1.5;
+    direction: ltr; 
+  }
+  .right-text h2{
+    font-family: "Reem Kufi", sans-serif;    
+    font-size: 150px;
+  }
+  .btn-projects {
+    border-radius: 34px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-size: 18px;
+    padding:14px 80px;
+    text-decoration:none;
+    color: #000000;
+    text-shadow:-1px 4px 8px #ffffff;
+    transition: 0.5s ease;
+    position: absolute;
+    left: 200px;
+    top: 550px;
+    animation: slideIncontent 2s forwards;
+    animation-delay: 4s;
+  }
+  .btn-projects:hover {
+    border-radius: 34px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+  }
+  .btn-projects:active {
+    border-radius: 34px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 15px #a4a4a4, inset -5px -5px 15px #ffffff;
+    z-index: 1;
+  }
+  .btn-Certificates {
+    border-radius: 34px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-size:18px;
+    padding:14px 70px;
+    text-decoration:none;
+    color: #000000;
+    text-shadow:-1px 4px 8px #ffffff;
+    transition: 0.5s;
+    position: absolute;
+    right: 200px;
+    top: 550px;
+    animation: slideIncontent 2s forwards;
+    animation-delay: 4s;
+  }
+  .btn-Certificates:hover {
+    border-radius: 34px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+  }
+  .btn-Certificates:active {
+    border-radius: 34px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 15px #a4a4a4, inset -5px -5px 15px #ffffff;
+  }
+  @media screen and (max-width: 1600px) {
+    .main-image {
+      width: 500px;
+      height: auto;
+      bottom: 50px;
+      transition: 0.5s ease-in-out;
+    }
+    .left-text {
+      width: 30%;
+      text-align: justify;
+      font-size: 18px; 
+      line-height: 1.5;
+      direction: rtl;
+      top: 400px;
+      left: 30px;
+      transition: 0.5s ease-in-out;
+    }
+    .left-text h2{
+      font-size: 110px;
+      transition: 0.5s ease-in-out;
+    }
+    .right-text {
+      width: 30%;
+      text-align: justify;
+      font-size: 18px; 
+      line-height: 1.5;
+      direction: ltr; 
+      transition: 0.5s ease-in-out;
+    }
+    .right-text h2{
+      font-size: 110px;
+      transition: 0.5s ease-in-out;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .main-image {
+      width: 400px;
+      height: auto;
+      bottom: 50px;
+    }
+    .left-text {
+      width: 40%;
+      text-align: justify;
+      font-size: 16px; 
+      line-height: 1.5;
+      direction: rtl;
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    .left-text h2{
+      font-size: 100px;
+      position: relative;
+      left: 30px;
+    }
+    .right-text {
+      width: 40%;
+      text-align: justify;
+      font-size: 16px; 
+      line-height: 1.5;
+      direction: ltr; 
+      position: absolute;
+      top: 400px;
+      right: 30px;
+    }
+    .right-text h2{
+      font-size: 100px;
+      position: relative;
+      left: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-image {
+      width: 400px;
+      height: auto;
+      bottom: 50px;
+    }
+    .left-text {
+      width: 40%;
+      text-align: justify;
+      font-size: 16px; 
+      line-height: 1.5;
+      direction: rtl;
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    .left-text h2{
+      font-size: 80px;
+      position: relative;
+      left: 10px;
+    }
+    .right-text {
+      width: 40%;
+      text-align: justify;
+      font-size: 16px; 
+      line-height: 1.5;
+      direction: ltr; 
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    .right-text h2{
+      font-size: 80px;
+      position: relative;
+      left: 0;
+    }
+    .btn-projects {
+      border-radius: 34px;
+      background: linear-gradient(145deg, #f0f0f0, #cacaca);
+      box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+      display:inline-block;
+      cursor:pointer;
+      font-family: "Noto Sans Arabic", sans-serif;
+      font-size: 14px;
+      padding:14px 60px;
+      text-decoration:none;
+      color: #000000;
+      text-shadow:-1px 4px 8px #ffffff;
+      transition: 0.5s ease;
+      position: absolute;
+      left: 0;
+      top: 300px;
+      animation: slideIncontent 2s forwards;
+      animation-delay: 4s;
+      white-space: nowrap;
+    }
+    .btn-Certificates {
+      border-radius: 34px;
+      background: linear-gradient(145deg, #f0f0f0, #cacaca);
+      box-shadow:  5px 5px 15px #a4a4a4, -5px -5px 15px #ffffff;
+      display:inline-block;
+      cursor:pointer;
+      font-family: "Noto Sans Arabic", sans-serif;
+      font-size:14px;
+      padding:14px 50px;
+      text-decoration:none;
+      color: #000000;
+      text-shadow:-1px 4px 8px #ffffff;
+      transition: 0.5s;
+      position: absolute;
+      right: auto;
+      top: 300px;
+      animation: slideIncontent 2s forwards;
+      animation-delay: 4s;
+      white-space: nowrap;
+    }
+  }
